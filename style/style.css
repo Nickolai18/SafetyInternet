@@ -1,0 +1,320 @@
+@font-face {
+    font-family: "Matrix_vs_Miltown";
+    src: url('../fonts/matrix-vs-miltown.woff');
+    src: url('../fonts/matrix-vs-miltown.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Play Family";
+    src: url('../fonts/play-bold.woff');
+    src: url('../fonts/play-bold.woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+/*Global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+p,h3{
+    font-family: "Play Family";
+}
+body{
+}
+a{
+    color: #060b09;
+    text-decoration: none;
+}
+:root{
+    --color1: #39a634;
+    --color2: #468342;
+    --color3: #256d24;
+    --color4: #060b09;
+    --color5: #66bd62;
+    --text-big: 50px;
+    --text-small-big: 30px;
+    --text-normal: 20px;
+    --border-radius_normal: 15px;
+    --border-radius_min: 8px;
+}
+section{
+    width: 100%;
+}
+.conteiner{
+    width: 80%;
+    margin: 0 auto;
+}
+.title{
+    text-align: center;
+    font-size: var(--text-big);
+    color: white;
+    text-shadow: 3px 3px 2px var(--color1),5px 5px 2px var(--color3),0px 7px 2px var(--color2),-3px 6px 2px var(--color4);
+    font-family: "Play Family";
+}
+/*Menu*/
+.section-menu{
+    background-color: var(--color1);
+    position: fixed;
+    z-index: 1000;
+}
+.conteiner-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    height: 80px;
+}
+.image-logo-menu{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.navigation-menu{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Matrix_vs_Miltown";
+}
+.link-menu:hover{
+    color: white;
+}
+@media (max-width:1500px) {
+    .navigation-menu{
+        width: 50%;
+    }
+}
+/*Banner*/
+.section-banner{
+    padding: 450px 0px 450px 0px;
+    background-image: url('../img/1612673549_2-p-kod-zelenogo-fona-2.jpg');
+    background-size: cover;
+}
+.title-banner{
+    display: block;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    font-family: "Matrix_vs_Miltown";
+    text-shadow: 3px 3px 2px var(--color1),5px 5px 2px var(--color3),0px 7px 2px var(--color2),-3px 6px 2px var(--color4);
+}
+/*About_us*/
+.section-about_us{
+    background-color: var(--color1);
+}
+.conteiner-about-us{
+    padding: 150px 100px 150px 100px;
+    width: 60%;
+}
+.title-about_us{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.text-about_us{
+    text-align: center;
+    font-size: var(--text-normal);
+}
+@media (max-width:1280px){
+    .conteiner-about-us{
+        padding: 150px 100px 150px 100px;
+        width: 80%;
+    }
+}
+@media (max-width:1024px){
+    .conteiner-about-us{
+        padding: 150px 100px 150px 100px;
+        width: 100%;
+    }
+}
+/*Threats*/
+.section-threats{
+    background-image: url('../img/fon.jpg');
+}
+.cont{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.246);
+}
+.conteiner-threats{
+    padding: 25px;
+}
+.box-threats{
+    width: 90%;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.card-threats{
+    width: 300px;
+    height: 400px;
+    background-color: #66bd62;
+    border-radius: var(--border-radius_normal);
+}
+.card-threats:nth-child(-n+6){
+    margin-left: 25px;
+    margin-bottom: 25;
+}
+.card-threats:nth-child(2n+1){
+    background-color: white;
+
+}
+.card-threats:nth-child(-n+3){
+    margin-bottom: 25px;
+}
+.image-threats{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: var(--border-radius_normal);
+    border-top-right-radius: var(--border-radius_normal);
+}
+.card-info{
+    padding: 15px;
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+}
+@media (max-width:1580px) {
+    .conteiner-threats{
+        width: 100%;        
+    }
+}
+@media (max-width:1280px) {
+    .card-threats:nth-child(4){
+        margin-bottom: 25px;
+    }
+    .card-threats:nth-child(odd){
+        margin-left: 25px;
+    }
+}
+/*Security*/
+.box-security{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin: 0 auto;
+}
+.card-security-image{
+    width: 50%;
+}
+.text-security{
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+.link-security{
+    padding: 15px;
+    background-color: var(--color2);
+    border-radius: var(--border-radius_min);
+    font-family: "Play Family";
+    border: 2px solid var(--color2);
+}
+.link-security:hover{
+    background-color: white;
+    border: 2px solid var(--color2);
+}
+.card-security-text{
+    width: 50%;
+    text-align: justify;
+    font-size: var(--text-normal);
+    padding-right: 15px;
+}
+.title-security{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.image-security{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    background-color: #468342;
+    border-radius: var(--border-radius_normal);
+}
+@media (max-width:1400px) {
+    .conteiner-security{
+        width: 100%;
+
+    }
+}
+@media (max-width:1280px) {
+    .box-security{
+        width: 95%;
+    }
+}
+/*Antivirus*/
+.section-antivirus{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-color: var(--color1);
+}
+.box-antivirus{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-antivirus{
+    width: 300px;
+    height: 300px;
+    border-radius: var(--border-radius_normal);
+    background-color: var(--color2);
+    border: 2px solid black;
+}
+.title-antivirus{
+    margin-bottom: 50px;
+    
+}
+.image-card-antivirus{
+    width: 296px;
+    height: 70%;
+    object-fit: cover;
+    border-top-left-radius:  var(--border-radius_normal);
+    border-top-right-radius: var(--border-radius_normal) ;
+}
+.card-title-antivirus{
+    text-align: center;
+    margin-top: 30px;
+}@media (max-width:1550px) {
+    .conteiner-antivirus{
+        width: 95%;
+
+    }
+}
+@media (max-width:1300px) {
+    .conteiner-antivirus{
+        width: 70%;
+    }
+    .card-antivirus:nth-child(-n+2){
+        margin-bottom: 25px;
+    }
+}
+@media (max-width:1024px) {
+    .conteiner-antivirus{
+        width: 65%;
+    }
+    .card-antivirus:nth-child(-n+2){
+        margin-bottom: 25px;
+    }
+}
+/*Footer*/
+.conteiner-footer{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.image-logo-footer{
+    width: 100px;
+    height: 100px;
+}
